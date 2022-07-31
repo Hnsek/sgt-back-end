@@ -57,6 +57,10 @@
         function findTrips($year, $month){
             return (new Trip())->find($year, $month);
         }
+
+        function findTripsByVehicles($year, $month, $vehicle){
+            return (new Trip())->findByVehicles($year, $month, $vehicle);
+        }
     }
 
 ?>
